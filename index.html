@@ -12,11 +12,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
-<body onload="locateAger()">
-    <main>
+<body id="backgroundImage" onload="refresh()">
+    <main id="backgroundColor">
         <h1>Supreme currently has</h1>
         <h1 id="killCounter">0</h1>
-        <h1>kills with Ager's Scepter</h1>
+        <h1>kills with <span id="nameText"></span></h1>
+        <br>
+        <input id="agerSelect" type="image" src="https://www.bungie.net/common/destiny2_content/icons/a8fce2ba7ff621877cb718a84cc70930.jpg" onclick="currentlySelected = 0; refresh()">
+        <input id="promSelect" type="image" src="https://www.bungie.net/common/destiny2_content/icons/779288b69aa050c126c827ec5bb44c47.jpg" onclick="currentlySelected = 1; refresh()">
+        <input id="coldSelect" type="image" src="https://www.bungie.net/common/destiny2_content/icons/01de9a1a16ed563ac911c0c95d15ab88.jpg" onclick="currentlySelected = 2; refresh()">
+        <input id="waveSelect" type="image" src="https://www.bungie.net/common/destiny2_content/icons/e775a68f8846dc95cdd2823774b7b26d.jpg" onclick="currentlySelected = 3; refresh()">
+        <br>
         <button onclick="refresh()">Refresh</button>
     </main>
 </body>

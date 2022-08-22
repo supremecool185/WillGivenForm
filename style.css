@@ -1,15 +1,15 @@
 body{
     margin: 0px;
-    background-image: url("https://www.bungie.net/common/destiny2_content/screenshots/1833195496.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     text-align: center;
+    transition-duration: 0.5s;
 }
 
 main{
-    background-color: rgba(71, 102, 151, 0.2);
+    transition-duration: 0.5s;
     display: inline-block;
     text-align: center;
     padding: 2% 2% 0 2%;
@@ -25,7 +25,6 @@ main h1{
 }
 
 main button{
-    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -34,4 +33,10 @@ main button{
     font-family: 'Roboto Mono', monospace;
     font-size: 500%;
     margin: 0px;
+}
+
+input{
+    border: 4px;
+    width: 20%;
+    border-image: linear-gradient(to top, rgb(234, 222, 139), rgb(233, 201, 54)) 1;
 }
