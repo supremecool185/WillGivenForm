@@ -1,7 +1,3 @@
-response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-response.setHeader("Pragma", "no-cache");
-response.setHeader("Expires", "0");
-
 var apiKey = "229a7c5983784781b4278ba8c3802747";
 var countStop = -1;
 var count = 0;
